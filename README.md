@@ -1,10 +1,10 @@
- **Cricket Ball Tracking System**
+# Custom Cricket Ball Tracking
 
-**Objective**:
+## Objective:
 
 To track the trajectory of a cricket ball in videos using a custom-trained model.
 
-**Process Flow**
+## Process Flow
 
 1. **Train- Prepare Video Data :** Stitch together 5 cricket videos with the same location and lighting to maintain consistency in data.
 1. **Extract Frames**
@@ -29,7 +29,7 @@ To track the trajectory of a cricket ball in videos using a custom-trained model
 - **Action**: Test the model on videos with similar lighting and locations that were not annotated.
 - **Purpose**: Validate the model’s accuracy in detecting and tracking the ball in new, unseen videos.
 
-**Summary of Algorithms Used:**
+## Summary of Algorithms Used:
 
 1. **YOLO (You Only Look Once)**:
 - Object detection algorithm using a CNN that detects the cricket ball in each frame.
@@ -40,7 +40,6 @@ To track the trajectory of a cricket ball in videos using a custom-trained model
 3. **Image Preprocessing**:
 - **Image Resizing**: Before feeding images to YOLO, they are resized to a consistent resolution (e.g., 640x640 in your setup). This helps in speeding up the training and makes sure the model receives consistent input sizes.
 
-# Custom Cricket Ball Tracking using YOLOv8
 
 This project uses a custom-trained YOLOv8 model to detect and track a cricket ball in video footage. It processes each video frame to detect the ball, draws bounding boxes, and tracks the ball's trajectory, saving the processed output video and logging the ball's coordinates.
 
@@ -49,8 +48,8 @@ This project uses a custom-trained YOLOv8 model to detect and track a cricket ba
 1. **Clone this repository:**
 
     ```sh
-    git clone https://github.com/yourusername/custom_cricket_ball_tracking.git
-    cd custom_cricket_ball_tracking
+    git clone https://github.com/yourusername/CustomBallTracking.git
+    cd CustomBallTracking
     ```
 
 2. **Install the required dependencies:**
@@ -59,9 +58,6 @@ This project uses a custom-trained YOLOv8 model to detect and track a cricket ba
     pip install -r requirements.txt
     ```
 
-3. **Set up your environment variables (if needed):**
-
-    If your project requires API keys or other environment variables, create a `.env` file in the root directory. Otherwise, proceed to the next step.
 
 ## Usage
 
@@ -70,7 +66,7 @@ This project uses a custom-trained YOLOv8 model to detect and track a cricket ba
     You can run the ball tracking script directly using:
 
     ```sh
-    python track_ball.py
+    python yolo_custom_ball_tracking.py
     ```
 
 2. **Input your video:**
@@ -85,7 +81,7 @@ This project uses a custom-trained YOLOv8 model to detect and track a cricket ba
 
 4. **Customize the Detection Parameters:**
 
-    - If needed, adjust the confidence threshold, video paths, or other parameters directly in the `track_ball.py` script.
+    - If needed, adjust the confidence threshold, video paths, or other parameters directly in the `yolo_custom_ball_tracking.py` script.
 
 5. **View Logs and Results:**
 
