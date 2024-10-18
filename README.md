@@ -1,4 +1,4 @@
-https://github.com/NachiappanRavi/CustomBallTracking/blob/main/output_videos_custom_yolo/output_video.avi 
+![](https://github.com/NachiappanRavi/CustomBallTracking/blob/main/output_videos_custom_yolo/output_video.avi)
 
  **Cricket Ball Tracking System**
 
