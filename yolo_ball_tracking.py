@@ -19,7 +19,7 @@ logging.basicConfig(filename=log_file_path, level=logging.INFO, format='%(messag
 model = YOLO('yolov8x')
 
 # Path to input and output videos
-input_video_path = r"C:\Local_Disk_D\Git\custom_ball_tracking\Input_Video\IMG_1300.MOV"
+input_video_path = r"C:\Local_Disk_D\Git\CustomBallTracking\Input_Video\IMG_1300.MOV"
 output_video_path = os.path.join(output_dir, "output_video.avi")
 coordinates_json_path = os.path.join(output_dir, "coordinates.json")
 
